@@ -109,8 +109,6 @@ nav a:hover {
       }
 
 iframe{
-        max-width: max-content;
-        min-width: min-content;
         border-width: 2px;
         border-color: #000000;
         border-style: solid;
