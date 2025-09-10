@@ -1,5 +1,6 @@
  img {
-        width: auto;
+        width: 200px;
+        height: 200px;
         border-width: 2px;
         border-color: #000000;
         border-style: solid;
@@ -9,6 +10,7 @@
         margin: auto;
         margin-bottom: 5px;
         margin-top: 5px;
+        max-width: 100%;
 
  }
 
@@ -27,7 +29,7 @@ a{
 p{
         margin-left: 10px;
        font-weight: normal;
-       font-size: 25px;
+       font-size: 20px;
        font-family: Arial, Helvetica, sans-serif;
        margin-bottom: 5px;
        margin-top: 5px;
@@ -39,40 +41,42 @@ p{
  h1{
        text-align: center;
        font-family: Arial;
-       font-weight: bold;
+       font-weight: bolder;
        color: #000000;
+       font-size: 45px;
         }
 h2{
 
         text-align: center;
        font-family: Arial;
-       font-weight: normal;
+       font-weight: bold;
+       font-style: oblique;
        color: #000000;
        text-underline-offset: 0px;
-
-
-
-
+       font-size: 35px;
 }
-
 
   a{
        text-align: center;
        font-size: 0%;
        
+       
         }
 
 .flex-container {
         display: flex;
-        flex-wrap: nowrap;
-        background-color: rgb(255, 255, 255);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: normal;
+        align-content: normal;
 }
+
 
 .flex-container > div {
 
         background-color: #ffffff;
-        width: 100px;
-        margin: 10px;
+        margin: 5px;
         text-align: center;
         line-height: 75px;
         font-size: 30px;
@@ -108,6 +112,14 @@ nav a:hover {
         color: #000000;
       }
 
+nav a:focus{
+        background-color: rgb(204, 204, 204);
+        color: blue;
+        outline: 2px;
+
+}
+
+
 iframe{
         border-width: 2px;
         border-color: #000000;
@@ -118,7 +130,32 @@ iframe{
         margin: auto;
         margin-bottom: 5px;
         margin-top: 5px;
+        width: 50%;
+        height: auto;
 
 }
 
-background
+
+.container > div {
+
+     .container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  justify-content: center; 
+  align-content: center; 
+  justify-items: center; 
+  align-items: center; 
+  width: 300px; 
+  height: 300px; 
+}
+
+}
+ 
+:focus-visible{
+color: blue;
+background-color: aqua;
+
+
+
+}

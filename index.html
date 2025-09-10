@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/STYLE.CSS" />
     <title>Õppeleht</title>
+    <style>
+      .svg {
+        width: 100px;
+        height: 100px;
+      }
+    </style>
   </head>
 
   <h1>Kaspari Õppeleht</h1>
@@ -12,27 +18,77 @@
   <body>
     <h2>Videod</h2>
 
-    <iframe
-      width="1202"
-      height="676"
-      src="https://www.youtube.com/embed/qz0aGYrrlhU"
-      title="HTML Tutorial for Beginners: HTML Crash Course"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    >
-    </iframe>
+    <div class="container">
+      <div>
+        <iframe
+          width="1202"
+          height="676"
+          src="https://www.youtube.com/embed/qz0aGYrrlhU"
+          title="HTML Tutorial for Beginners: HTML Crash Course"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          loading="lazy"
+        >
+        </iframe>
+      </div>
 
-    <iframe
-      width="1202"
-      height="676"
-      src="https://www.youtube.com/embed/wRNinF7YQqQ"
-      title="Learn CSS in 1 hour 🎨"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
+      <div>
+        <iframe
+          width="1202"
+          height="676"
+          src="https://www.youtube.com/embed/wRNinF7YQqQ"
+          title="Learn CSS in 1 hour 🎨"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+    </div>
+
+    <p>Lisasin videod Youtubest Embed code abil + stiilisin CSSis</p>
+
+    <h2>Pildid</h2>
+
+    <div class="flex-container">
+      <div class="pildid">
+        <a
+          href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&pp=ygUXbmV2ZXIgZ29ubmEgZ2l2ZSB5b3UgdXA%3D"
+          target="_blank"
+          rel="noopener"
+          ><img loading="lazy" src="images/Trollface.png" alt="Troll"
+        /></a>
+      </div>
+
+      <div>
+        <img loading="lazy" src="images/smiley.jpg" alt="Smiley" />
+      </div>
+
+      <div><img src="images/smiley sad.jpg" alt="sad" /></div>
+    </div>
+
+    <p>
+      Lisasin pildid img funktsiooniga, pilt + link tegin a funktsiooniga, mille
+      vahele panin img koodi. Kasutasin piltide reastamiseks flexbox funktsiooni
+    </p>
+
+    <h2>Lingid</h2>
+
+    <nav>
+      <a href="HTTPS://WWW.Google.Com" target="_blank" rel="noopener">
+        Google</a
+      >
+      <a href="HTTPS://WWW.Youtube.Com" target="_blank" rel="noopener">
+        Youtube</a
+      >
+
+      <a href="https://www.w3schools.com/">W3Schools</a>
+
+      <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a>
+    </nav>
+    <p>Kasulikud materjalid, mida olen kasutanud</p>
   </body>
 </html>
